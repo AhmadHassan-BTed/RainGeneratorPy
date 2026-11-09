@@ -15,7 +15,7 @@ import pygame
 try:
     import sounddevice as sd
     HAS_SOUNDDEVICE = True
-except (ImportError, OSError):
+except Exception:
     HAS_SOUNDDEVICE = False
 
 logger = logging.getLogger(__name__)
